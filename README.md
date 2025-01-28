@@ -5,7 +5,7 @@ In addition, the two parameter files of SUMMA, namely, 'localParamInfo.txt' and 
 The compilation procedure on HPCs is as follows:
 
 
-First, load the version of the intel module you would like to use, and then, run the following commands in the directory of your fortran files.
+After clonning the Fortran source codes from this repository, load the version of the intel module you would like to use, and then, run the following commands in the directory of the  Fortran files.
 
 ifort -c summa_parameter_ident.f90 precmod.f90 stringmod.f90
 
