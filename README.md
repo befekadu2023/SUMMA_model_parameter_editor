@@ -8,5 +8,7 @@ The compilation procedure on HPCs is as follows:
 First, load the version of the intel module you would like to use, and then, run the following commands in the directory of your fortran files.
 
 ifort -c summa_parameter_ident.f90 precmod.f90 stringmod.f90
+
 ar rc summa_par_editor_lib.a precmod.o stringmod.o summa_parameter_ident.o
+
 ifort summa_parameter_editor.f90 summa_par_editor_lib.a
