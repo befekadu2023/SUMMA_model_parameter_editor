@@ -1,5 +1,5 @@
 # SUMMA_model_parameter_editor
-This is a Fortran code developed to edit the SUMMA model parameters. It requires a text file named 'model.in'. The parameter names recognized by SUMMA should be concatenated with an underscore followed by a space and the intended value, an a single row should be used for each parameter that needs to be edited.
+This is a Fortran code developed to edit the SUMMA model parameters. It requires a text file named 'model.in'. The parameter names recognized by SUMMA should be concatenated with an underscore followed by a space and the intended value, and a single row should be used for each parameter that needs to be edited.
 In addition, the two parameter files of SUMMA, namely, 'localParamInfo.txt' and 'basinParamInfo.txt', need to be copied and renamed as 'localParamInfo_default_sundials.txt' and 'basinParamInfo_default.txt', respectively, to avoid overriding the default parameter values. The parameter editor uses the two copied files to populate the parameter names and values  which are not provided in the 'model.in' file.
 
 The compilation procedure on HPCs is as follows:
